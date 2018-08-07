@@ -2,6 +2,10 @@ package com.company;
 
 import org.junit.jupiter.api.Test;
 
+import javax.swing.tree.FixedHeightLayoutCache;
+
+import java.io.ByteArrayOutputStream;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class FizzbuzzTest {
@@ -9,7 +13,7 @@ class FizzbuzzTest {
 //    First test
     @Test
     public void return100Values() {
-        Object[] test = new Object[100];
+        String[] test = new String[100];
         assertEquals(test.length, Fizzbuzz.calcFizzbuzz().length);
     }
 
@@ -17,27 +21,27 @@ class FizzbuzzTest {
 
     @Test
     public void testFizz(){
-        Object[] test = new Object[100];
+        String[] test = new String[100];
         test[2] = "Fizz";
-        Object[] results = Fizzbuzz.calcFizzbuzz();
+        String[] results = Fizzbuzz.calcFizzbuzz();
         assertEquals(test[2], results[2]);
     }
 
     // Third test
     @Test
     public void testBuzz() {
-        Object[] test = new Object[100];
+        String[] test = new String[100];
         test[4] = "Buzz";
-        Object[] results = Fizzbuzz.calcFizzbuzz();
+        String[] results = Fizzbuzz.calcFizzbuzz();
         assertEquals(test[4], results[4]);
     }
 
 //    Fourth test
     @Test
     public void testFizzbuzz(){
-        Object[] test = new Object[100];
+        String[] test = new String[100];
         test[14] = "Fizzbuzz";
-        Object[] results = Fizzbuzz.calcFizzbuzz();
+        String[] results = Fizzbuzz.calcFizzbuzz();
         assertEquals(test[14], results[14]);
     }
 }
