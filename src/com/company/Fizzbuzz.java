@@ -3,8 +3,8 @@ package com.company;
 import java.lang.reflect.Array;
 
 public class Fizzbuzz {
-    public static Array[] printFizzbuzz()
+    public static Object[] printFizzbuzz()
     {
-        return new Array[100];
+        return new Object[100];
     }
 }
