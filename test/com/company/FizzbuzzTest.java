@@ -31,4 +31,13 @@ class FizzbuzzTest {
         Object[] results = Fizzbuzz.printFizzbuzz();
         assertEquals(test[4], results[4]);
     }
+
+//    Fourth test
+    @Test
+    public void testFizzbuzz(){
+        Object[] test = new Object[100];
+        test[14] = "Fizzbuzz";
+        Object[] results = Fizzbuzz.printFizzbuzz();
+        assertEquals(test[14], results[14]);
+    }
 }
