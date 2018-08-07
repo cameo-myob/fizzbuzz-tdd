@@ -10,7 +10,7 @@ class FizzbuzzTest {
     @Test
     public void return100Values() {
         Object[] test = new Object[100];
-        assertEquals(test.length, Fizzbuzz.printFizzbuzz().length);
+        assertEquals(test.length, Fizzbuzz.calcFizzbuzz().length);
     }
 
     // Second test
@@ -19,7 +19,7 @@ class FizzbuzzTest {
     public void testFizz(){
         Object[] test = new Object[100];
         test[2] = "Fizz";
-        Object[] results = Fizzbuzz.printFizzbuzz();
+        Object[] results = Fizzbuzz.calcFizzbuzz();
         assertEquals(test[2], results[2]);
     }
 
@@ -28,7 +28,7 @@ class FizzbuzzTest {
     public void testBuzz() {
         Object[] test = new Object[100];
         test[4] = "Buzz";
-        Object[] results = Fizzbuzz.printFizzbuzz();
+        Object[] results = Fizzbuzz.calcFizzbuzz();
         assertEquals(test[4], results[4]);
     }
 
@@ -37,7 +37,7 @@ class FizzbuzzTest {
     public void testFizzbuzz(){
         Object[] test = new Object[100];
         test[14] = "Fizzbuzz";
-        Object[] results = Fizzbuzz.printFizzbuzz();
+        Object[] results = Fizzbuzz.calcFizzbuzz();
         assertEquals(test[14], results[14]);
     }
 }
