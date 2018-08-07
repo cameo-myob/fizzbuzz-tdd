@@ -8,10 +8,9 @@ class FizzbuzzTest {
 
 //    First test
     @Test
-    public void returnValues() {
+    public void return100Values() {
         Object[] test = new Object[100];
-        test[2] = "Fizz";
-        assertArrayEquals(test, Fizzbuzz.printFizzbuzz());
+        assertEquals(test.length, Fizzbuzz.printFizzbuzz().length);
     }
 
     // Second test
@@ -22,5 +21,14 @@ class FizzbuzzTest {
         test[2] = "Fizz";
         Object[] results = Fizzbuzz.printFizzbuzz();
         assertEquals(test[2], results[2]);
+    }
+
+    // Third test
+    @Test
+    public void testBuzz() {
+        Object[] test = new Object[100];
+        test[4] = "Buzz";
+        Object[] results = Fizzbuzz.printFizzbuzz();
+        assertEquals(test[4], results[4]);
     }
 }
