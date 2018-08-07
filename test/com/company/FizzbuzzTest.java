@@ -10,14 +10,17 @@ class FizzbuzzTest {
     @Test
     public void returnValues() {
         Object[] test = new Object[100];
+        test[2] = "Fizz";
         assertArrayEquals(test, Fizzbuzz.printFizzbuzz());
     }
 
-//    @Test
-//    public void testFizz(){
-//        Object[] test = new Object[100];
-//        test[2] = "Fizz";
-//        Object[] results = Fizzbuzz.printFizzbuzz();
-//        assertEquals(test[2], results[2]);
-//    }
+    // Second test
+
+    @Test
+    public void testFizz(){
+        Object[] test = new Object[100];
+        test[2] = "Fizz";
+        Object[] results = Fizzbuzz.printFizzbuzz();
+        assertEquals(test[2], results[2]);
+    }
 }

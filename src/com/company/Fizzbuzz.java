@@ -5,6 +5,8 @@ import java.lang.reflect.Array;
 public class Fizzbuzz {
     public static Object[] printFizzbuzz()
     {
-        return new Object[100];
+        Object[] fizzbuzz = new Object[100];
+        fizzbuzz[2] = "Fizz";
+        return fizzbuzz;
     }
 }
