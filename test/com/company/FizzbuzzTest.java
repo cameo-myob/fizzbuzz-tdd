@@ -2,10 +2,6 @@ package com.company;
 
 import org.junit.jupiter.api.Test;
 
-import javax.swing.tree.FixedHeightLayoutCache;
-
-import java.io.ByteArrayOutputStream;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 class FizzbuzzTest {
